@@ -1,0 +1,21 @@
+Create database movie;
+
+
+CREATE TABLE tickets (
+    id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(255) NOT NULL,
+    movieName VARCHAR(255) NOT NULL,
+    numTickets INT NOT NULL,
+    showTime VARCHAR(255) NOT NULL,
+    amount integer	
+);
+
+
+CREATE TABLE users (
+  id int(11) NOT NULL AUTO_INCREMENT,
+  username varchar(50) NOT NULL,
+  email varchar(100) NOT NULL,
+  password varchar(50) NOT NULL,
+  address varchar(255) DEFAULT NULL,
+  PRIMARY KEY (id)
+) ;
